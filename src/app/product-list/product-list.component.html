@@ -14,4 +14,14 @@ Any directive with an asterisk, *, is a structural directive.
 -->
 
 <div *ngFor="let product of products">
+
+  <!--
+  To display the names of the products,
+    use the interpolation syntax {{ }}.
+
+  Interpolation renders a property's value as text
+    -->
+
+  <h3>{{ product.name }}</h3>
+
 </div>
