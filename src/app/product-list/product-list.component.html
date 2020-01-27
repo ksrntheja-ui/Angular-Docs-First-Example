@@ -1,1 +1,17 @@
-<p>product-list works!</p>
+<h2>Products</h2>
+
+<!--
+Each product in the list displays the same way, one after another on the page.
+  To iterate over the predefined list of products, put the *ngFor directive on a <div>
+
+With *ngFor, the <div> repeats for each product in the list.
+
+*ngFor is a "structural directive".
+Structural directives shape or reshape the DOM's structure,
+typically by adding, removing, and manipulating the elements to which they are attached.
+
+Any directive with an asterisk, *, is a structural directive.
+-->
+
+<div *ngFor="let product of products">
+</div>
