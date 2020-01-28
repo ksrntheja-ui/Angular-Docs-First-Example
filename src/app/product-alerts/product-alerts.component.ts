@@ -19,7 +19,7 @@ export class ProductAlertsComponent implements OnInit {
     'the product list component.
    */
 
-  @Input
+  @Input()
   product;
 
   constructor() {
