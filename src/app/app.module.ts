@@ -24,3 +24,14 @@ import {ProductAlertsComponent} from './product-alerts/product-alerts.component'
 })
 export class AppModule {
 }
+
+/*
+The app now has a product list and sharing feature.
+In the process, you've learned to use five common features of Angular's template syntax:
+
+      *ngFor
+      *ngIf
+      Interpolation {{ }}
+      Property binding [ ]
+      Event binding ( )
+*/
