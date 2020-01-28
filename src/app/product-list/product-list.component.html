@@ -22,6 +22,27 @@ Any directive with an asterisk, *, is a structural directive.
   Interpolation renders a property's value as text
     -->
 
-  <h3>{{ product.name }}</h3>
+  <h3>
+
+    <!--    To make each product name a link to product details,
+        add the <a> element and set its title to be the
+        product's name by using the
+        property binding [ ] syntax-->
+
+    <!-- Interpolation {{ }} lets you
+     render the
+     property value as text;
+
+     property binding [ ] lets you use the
+     property value in a
+     template expression.-->
+
+    <a [title]="product.name + ' details'">
+
+      {{ product.name}}
+
+    </a>
+
+  </h3>
 
 </div>
