@@ -45,4 +45,12 @@ Any directive with an asterisk, *, is a structural directive.
 
   </h3>
 
+  <!--On the <p> element, use an
+  *ngIf directive so that Angular only creates the <p> element
+  if the current product has a description.-->
+
+  <p *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
+
 </div>
