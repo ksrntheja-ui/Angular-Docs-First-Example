@@ -53,4 +53,17 @@ Any directive with an asterisk, *, is a structural directive.
     Description: {{ product.description }}
   </p>
 
+  <!--  Add a button so users can share a product with friends. Bind the
+    button's click
+    event
+    to the share() method (in product-list.component.ts).
+
+    Event binding uses a set of parentheses,
+    ( ),
+    around the event-->
+
+  <button (click)="share()">
+    share
+  </button>
+
 </div>
