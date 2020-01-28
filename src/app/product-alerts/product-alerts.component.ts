@@ -19,6 +19,12 @@ export class ProductAlertsComponent implements OnInit {
     'the product list component.
    */
 
+  /*
+  The new product alert component takes a product as
+    input from the product list.
+    With that input, it shows or hides the "Notify Me" button, based on the price of the product.
+  */
+
   @Input()
   product;
 
