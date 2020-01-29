@@ -7,6 +7,9 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ProductDetailsComponent implements OnInit {
 
+  // Define the product property
+  product;
+
   constructor() {
   }
 
