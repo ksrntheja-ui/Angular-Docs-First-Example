@@ -13,7 +13,17 @@ typically by adding, removing, and manipulating the elements to which they are a
 Any directive with an asterisk, *, is a structural directive.
 -->
 
+<!--
 <div *ngFor="let product of products">
+-->
+
+<!--
+Update the*ngFor directive to assign
+each index in the products array to the
+productId
+variable
+when iterating over the list.-->
+<div *ngFor="let product of products; index as productId">
 
   <!--
   To display the names of the products,
