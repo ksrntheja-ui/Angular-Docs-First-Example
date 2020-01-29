@@ -77,8 +77,30 @@ Any directive with an asterisk, *, is a structural directive.
     to the component using
     property binding.-->
 
+  <!--  <app-product-alerts
+      [product]="product">
+    </app-product-alerts>-->
+
+  <!--  Finally, update the product
+    list
+    component to receive
+    output from the product
+    alerts
+    component.
+
+    In product-
+    list.component.html,
+    bind the app-product
+    -alerts component (which is
+    what displays the "Notify Me" button)
+    to the onNotify() method of the product
+    list component.-->
+
   <app-product-alerts
-    [product]="product">
+    [product]="product"
+    (notified)="onNotify()"
+  >
   </app-product-alerts>
+
 
 </div>
