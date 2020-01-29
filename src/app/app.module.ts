@@ -7,13 +7,15 @@ import {AppComponent} from './app.component';
 import {TopBarComponent} from './top-bar/top-bar.component';
 import {ProductListComponent} from './product-list/product-list.component';
 import {ProductAlertsComponent} from './product-alerts/product-alerts.component';
+import {ProductDetailsComponent} from './product-details/product-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent, // ng generate component top-bar
     ProductListComponent, // ng generate component product-list
-    ProductAlertsComponent // ng generate component product-alerts
+    ProductAlertsComponent, // ng generate component product-alerts
+    ProductDetailsComponent // ng generate component product-details
   ],
   imports: [
     BrowserModule,
