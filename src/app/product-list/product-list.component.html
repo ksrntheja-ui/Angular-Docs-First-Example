@@ -37,7 +37,24 @@ Any directive with an asterisk, *, is a structural directive.
      property value in a
      template expression.-->
 
-    <a [title]="product.name + ' details'">
+    <!--
+
+        <a [title]="product.name + ' details'">
+
+          {{ product.name}}
+
+        </a>
+    -->
+
+    <!--    Define a link using the
+        RouterLink
+        directive.
+
+        The routerLink defines how the user
+        navigates to the
+        route (or URL) declaratively in the component template.-->
+
+    <a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
 
       {{ product.name}}
 
