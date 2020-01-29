@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 
+import {ActivatedRoute} from '@angular/router';
+
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
@@ -10,7 +12,10 @@ export class ProductDetailsComponent implements OnInit {
   // Define the product property
   product;
 
-  constructor() {
+  // inject the ActivatedRoute into the constructor
+  constructor(
+    private activatedRoute: ActivatedRoute
+  ) {
   }
 
   ngOnInit() {
