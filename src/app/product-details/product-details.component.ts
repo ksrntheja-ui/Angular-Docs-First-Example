@@ -18,9 +18,11 @@ export class ProductDetailsComponent implements OnInit {
   constructor(
     private activatedRoute: ActivatedRoute
   ) {
+    console.log('ProductDetailsComponent constructor(...) called');
   }
 
   ngOnInit() {
+    console.log('ProductDetailsComponent ngOnInit() called');
     // In the ngOnInit() method, subscribe to route params and fetch the product based on the productId.
     this.activatedRoute.paramMap.subscribe(paramMap => {
       this.product = products[paramMap.get('productId')];
