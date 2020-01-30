@@ -37,3 +37,11 @@ In the process, you've learned to use five common features of Angular's template
       Property binding [ ]
       Event binding ( )
 */
+
+/*
+The routerLink defines how the user
+navigates to the route (or URL) declaratively in the component template.
+
+The ActivatedRoute is specific to each routed component loaded by the Angular Router.
+It contains information about the route, its parameters, and additional data associated with the route.
+*/
