@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, ParamMap} from '@angular/router';
 
 import {products} from '../products';
 
@@ -21,6 +21,10 @@ export class ProductDetailsComponent implements OnInit {
   }
 
   ngOnInit() {
+    // In the ngOnInit() method, subscribe to route params and fetch the product based on the productId.
+    this.activatedRoute.paramMap.subscribe(paramMap => {
+      this.product = products[paramMap.get('productId')];
+    });
   }
 
 }
