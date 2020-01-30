@@ -18,7 +18,9 @@ export class ProductDetailsComponent implements OnInit {
 
   // inject the ActivatedRoute into the constructor
   constructor(
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    // Inject the cart service
+    private cartService: CartService
   ) {
     console.log('ProductDetailsComponent constructor(...) called');
   }
