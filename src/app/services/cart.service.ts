@@ -10,4 +10,10 @@ export class CartService {
 
   constructor() {
   }
+
+  // Define method to add items to the cart
+  addToCart(product) {
+    this.items.push(product);
+  }
+
 }
