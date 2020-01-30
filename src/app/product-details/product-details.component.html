@@ -5,6 +5,7 @@
   <h4>{{ product.price | currency }}</h4>
   <p>{{ product.description }}</p>
 
-  <button>buy</button>
+  <!--bind the click() event to the addToCart() method-->
+  <button (click)="addToCart()">buy</button>
 
 </div>
