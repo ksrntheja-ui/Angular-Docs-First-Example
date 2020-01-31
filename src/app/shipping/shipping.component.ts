@@ -19,6 +19,24 @@ export class ShippingComponent implements OnInit {
   }
 
   ngOnInit() {
+    // Set the shippingCosts property using the getShippingPrices() method from cart service.
+    // this.shippingCosts = this.cartService.getShippingPrices();
+    this.shippingCosts = this.cartService.getShippingPrices();
+    /*
+    this.cartService.getShippingPrices().subscribe(data => {
+      this.shippingCosts = data;
+      console.log(data);
+    });
+    if (this.shippingCosts) {
+      console.log('Log' + this.shippingCosts);
+    }
+    */
   }
+
+  /*
+  clickButton() {
+    console.log(this.shippingCosts[1]);
+  }
+  */
 
 }
