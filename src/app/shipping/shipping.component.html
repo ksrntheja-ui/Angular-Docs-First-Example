@@ -1,7 +1,7 @@
 <!--<button (click)="clickButton()">-->
 <h3>Shipping Prices</h3>
 
-<div *ngFor="let shipping of shippingCosts">
+<div *ngFor="let shipping of shippingCosts | async">
   <span>{{ shipping.type }}</span>
   <span>{{ shipping.price }}</span>
 </div>
