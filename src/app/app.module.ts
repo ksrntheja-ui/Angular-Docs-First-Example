@@ -10,6 +10,7 @@ import {ProductAlertsComponent} from './product-alerts/product-alerts.component'
 import {ProductDetailsComponent} from './product-details/product-details.component';
 import {CartComponent} from './cart/cart.component';
 import {HttpClientModule} from '@angular/common/http';
+import {ShippingComponent} from './shipping/shipping.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {HttpClientModule} from '@angular/common/http';
     ProductListComponent, // ng generate component product-list
     ProductAlertsComponent, // ng generate component product-alerts
     ProductDetailsComponent, // ng generate component product-details
-    CartComponent // ng generate component cart
+    CartComponent, // ng generate component cart
+    ShippingComponent // ng generate component shipping
   ],
   imports: [
     BrowserModule,
