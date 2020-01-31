@@ -9,6 +9,9 @@ import {CartService} from '../services/cart.service';
 })
 export class ShippingComponent implements OnInit {
 
+  // Define a shippingCosts property.
+  shippingCosts;
+
   constructor(
     // Inject cart service
     private cartService: CartService
