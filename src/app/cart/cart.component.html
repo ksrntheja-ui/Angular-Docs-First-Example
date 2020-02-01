@@ -28,7 +28,7 @@ event binding to
 listen for the form submission and
 call the onSubmit() method with the
 checkoutForm value. -->
-<form [formGroup]="checkoutForm" (ngSubmit)="checkoutForm.value">
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
 
   <div>
     <label for="name">
