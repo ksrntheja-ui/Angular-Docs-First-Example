@@ -23,6 +23,12 @@ export class CartComponent implements OnInit {
     private formBuilder: FormBuilder // ERROR Error: "Uncaught (in promise): NullInjectorError:
     // StaticInjectorError(AppModule)[CartComponent -> FormBuilder]:
   ) {
+    // set the checkoutForm property with a form model containing name and address fields, using the
+    // FormBuilder#group() method.
+    this.checkoutForm = this.formBuilder.group({
+      name: '',
+      address: ''
+    });
   }
 
   ngOnInit() {
