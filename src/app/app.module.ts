@@ -51,3 +51,16 @@ navigates to the route (or URL) declaratively in the component template.
 The ActivatedRoute is specific to each routed component loaded by the Angular Router.
 It contains information about the route, its parameters, and additional data associated with the route.
 */
+
+/*
+Services
+A service is an instance of a class that can be made available to any part of your application using
+Angular's dependency injection system.
+
+HttpClient
+Before you can use Angular's HTTP client, you must set up your app to use HttpClientModule.
+
+Angular's HttpClientModule
+registers the providers needed to use a single instance of the HttpClient service throughout your app.
+The HttpClient service is what you inject into your services to fetch data and interact with external APIs and resources.
+*/
