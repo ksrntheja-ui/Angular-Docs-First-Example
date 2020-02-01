@@ -22,6 +22,12 @@ Error: Template parse errors:
 No provider for ControlContainer
 -->
 
-<form [formGroup]="checkoutForm">
+<!-- On the form tag, use an
+ngSubmit
+event binding to
+listen for the form submission and
+call the onSubmit() method with the
+checkoutForm value. -->
+<form [formGroup]="checkoutForm" (ngSubmit)="checkoutForm.value">
   <button class="button" type="submit">Purchase</button>
 </form>
