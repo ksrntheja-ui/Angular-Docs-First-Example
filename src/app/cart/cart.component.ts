@@ -13,6 +13,9 @@ export class CartComponent implements OnInit {
   // Define the items property to store the products in the cart.
   items;
 
+  // Define the checkoutForm property to store the form model.
+  checkoutForm;
+
   constructor(
     // Inject the CartService to manage cart information.
     private cartService: CartService,
