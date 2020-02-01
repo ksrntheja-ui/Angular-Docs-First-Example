@@ -66,3 +66,16 @@ Angular's HttpClientModule
 registers the providers needed to use a single instance of the HttpClient service throughout your app.
 The HttpClient service is what you inject into your services to fetch data and interact with external APIs and resources.
 */
+
+/*
+There are two parts to an Angular Reactive form, the
+objects that live in the
+component to store and manage the form, and the
+visualization of the form that lives in the t
+emplate.
+
+
+The form model is the source of truth for the status of the form and is defined in the component class.
+
+Angular's FormBuilder service provides convenient methods for generating controls.
+ */
