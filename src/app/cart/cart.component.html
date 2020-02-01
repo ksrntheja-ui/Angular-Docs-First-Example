@@ -14,10 +14,14 @@
   <span>{{item.price | currency}}</span>
 </div>
 
-<form>
+<!--<form>
   <button class="button" type="submit">Purchase</button>
-</form>
+</form>-->
 <!--
 Error: Template parse errors:
 No provider for ControlContainer
 -->
+
+<form [formGroup]="checkoutForm">
+  <button class="button" type="submit">Purchase</button>
+</form>
