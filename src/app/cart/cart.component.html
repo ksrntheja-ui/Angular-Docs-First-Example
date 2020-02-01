@@ -29,5 +29,21 @@ listen for the form submission and
 call the onSubmit() method with the
 checkoutForm value. -->
 <form [formGroup]="checkoutForm" (ngSubmit)="checkoutForm.value">
+
+  <div>
+    <label for="name">
+      Name
+    </label>
+    <input id="name" type="text">
+  </div>
+
+  <div>
+    <label for="address">
+      Name
+    </label>
+    <input id="address" type="text">
+  </div>
+
   <button class="button" type="submit">Purchase</button>
+  
 </form>
